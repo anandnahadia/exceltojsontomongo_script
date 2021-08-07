@@ -1,0 +1,16 @@
+{
+  "name": "hospitalscript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "exceltojson.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node exceltojson.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "convert-excel-to-json": "^1.7.0",
+    "mongodb": "^4.1.0"
+  }
+}
