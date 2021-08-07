@@ -1,5 +1,5 @@
 //You need to have mongodb installed in your system
-//Run npm start/node index.js to run the script
+//Run npm install and then run npm start/node index.js to run the script
 
 
 const excelToJson = require('convert-excel-to-json');
@@ -24,12 +24,14 @@ for(let i=1;i<result['Multi Speciality Marketing'].length;i++){
 
     hospital_data[i-1].Doctors = {
         'Doctor Name' : result['Multi Speciality Marketing'][i].D,
+        //Splitting Qualifications into an array
         'Qualification' : (result['Multi Speciality Marketing'][i].E).split(","),
         'Specialization' : result['Multi Speciality Marketing'][i].F,
         'Speciality (According to admin panel)' : result['Multi Speciality Marketing'][i].G,
         'Experience' : result['Multi Speciality Marketing'][i].H,
         'Consultation Fees' : result['Multi Speciality Marketing'][i].I,
         'Days' : result['Multi Speciality Marketing'][i].J,
+        //spliting time slots into an array
         'Timings' : (result['Multi Speciality Marketing'][i].K).split('&'),
         'Designation' : result['Multi Speciality Marketing'][i].L,
         'Doctor Details' : result['Multi Speciality Marketing'][i].M
