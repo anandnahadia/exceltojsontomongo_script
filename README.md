@@ -7,5 +7,5 @@ Mongodb Installation Commands -> https://docs.mongodb.com/database-tools/install
 
 Run following commands to run the script - 
 
-npm install
+npm install\
 npm start
