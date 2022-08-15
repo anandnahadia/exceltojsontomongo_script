@@ -1,5 +1,5 @@
-# exceltojsontomongo_script
-Script to Upload Data from Excel to Database
+# Excel to json to mongo script
+Script to Upload Data from Excel to Non relational Database Mongodb
 
 U need to have mongodb installed in your system
 
